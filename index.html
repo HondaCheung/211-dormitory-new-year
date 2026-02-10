@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>211宿舍新年贺词</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "仿宋", "宋体", "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .document-container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .red-header {
+            background: linear-gradient(45deg, #c00, #e74c3c);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .file-number {
+            text-align: right;
+            padding: 10px 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 14px;
+            color: #666;
+        }
+        .document-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 30px 0;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .content {
+            font-size: 16px;
+            text-indent: 2em;
+            margin: 20px 30px;
+            line-height: 1.8;
+            color: #444;
+        }
+        .members-list {
+            margin: 20px 40px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #c00;
+        }
+        .members-list p {
+            margin: 8px 0;
+            padding: 5px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .members-list p:last-child {
+            border-bottom: none;
+        }
+        .signature-area {
+            margin: 40px 30px 20px;
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .date {
+            text-align: right;
+            margin: 10px 30px 40px;
+            color: #666;
+        }
+        .stamp {
+            position: absolute;
+            bottom: 80px;
+            right: 100px;
+            opacity: 0.9;
+            transform: rotate(-15deg);
+        }
+        .stamp-inner {
+            width: 120px;
+            height: 120px;
+            border: 3px solid #c00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #c00;
+            background: rgba(255,255,255,0.9);
+            text-align: center;
+            line-height: 1.4;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-top: 1px solid #e9ecef;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qr-code img {
+            max-width: 150px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .document-container {
+                border-radius: 5px;
+            }
+            .red-header {
+                font-size: 18px;
+                padding: 15px 0;
+                letter-spacing: 4px;
+            }
+            .content, .members-list {
+                margin: 15px 20px;
+            }
+            .stamp {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                text-align: center;
+                margin: 20px auto;
+                transform: none;
+            }
+        }
+        
+        /* 打印样式 */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .document-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .red-header {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-container">
+        <div class="red-header">211宿舍文件</div>
+        
+        <div class="file-number">211宿〔2026〕1号</div>
+        
+        <div class="document-title">关于2026年新年的贺词</div>
+        
+        <div class="content">
+            值此2026年新春佳节来临之际，211宿舍全体成员向各位舍友及家人致以最诚挚的问候和最美好的祝福！
+        </div>
+        
+        <div class="content">
+            过去一年，我们七位成员——<strong>王云龙、宋济余、张浩、丁欣然、叶浩天、胡熙、曹文骏</strong>，在211宿舍这个温馨的大家庭中，相互支持，共同进步，建立了深厚的友谊。我们共同度过了无数个日夜，分享了彼此的快乐与忧愁，这段珍贵的宿舍情谊将永远铭记在心。
+        </div>
+        
+        <div class="content">
+            新的一年，是新的起点，也是新的征程。我们希望：
+        </div>
+        
+        <div class="members-list">
+            <p><strong>王云龙同志</strong>继续保持乐观向上的精神风貌，在学业上取得更大突破；</p>
+            <p><strong>宋济余同志</strong>发挥聪明才智，在专业领域深耕细作，勇攀高峰；</p>
+            <p><strong>张浩同志</strong>保持坚韧不拔的毅力，克服困难，实现自我超越；</p>
+            <p><strong>丁欣然同志</strong>以细致认真的态度，在各方面取得优异成绩；</p>
+            <p><strong>叶浩天同志</strong>发扬开拓创新精神，勇于尝试，不断突破；</p>
+            <p><strong>胡熙同志</strong>保持热情开朗的性格，为宿舍增添更多欢乐；</p>
+            <p><strong>曹文骏同志</strong>发挥沉稳踏实的作风，稳步向前，成就非凡。</p>
+        </div>
+        
+        <div class="content">
+            让我们携手并肩，以更加饱满的热情、更加昂扬的斗志，迎接新年的挑战与机遇。愿我们的友谊如长江之水，源远流长；愿我们每个人的梦想如璀璨星辰，熠熠生辉！
+        </div>
+        
+        <div class="content">
+            最后，衷心祝愿211宿舍全体成员及家人新年快乐，身体健康，学业有成，万事如意！
+        </div>
+        
+        <div class="signature-area">
+            <p>211宿舍全体成员</p>
+        </div>
+        
+        <div class="date">
+            <p>二〇二六年二月十日</p>
+        </div>
+        
+        <div class="stamp">
+            <div class="stamp-inner">
+                <div>
+                    <div>211宿舍</div>
+                    <div>新年快乐</div>
+                    <div>2026</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>————————————————————————————————————————</p>
+            <p>抄送：各成员家庭群 | 印发：211宿舍内部传阅</p>
+            <div class="qr-code">
+                <p>扫描二维码分享给好友</p>
+                <!-- 这里可以放置二维码图片 -->
+                <div style="width:150px;height:150px;background:#f0f0f0;margin:0 auto;display:flex;align-items:center;justify-content:center;color:#666;">
+                    二维码位置
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 添加简单的交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为每个成员列表项添加点击效果
+            const memberItems = document.querySelectorAll('.members-list p');
+            memberItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.style.backgroundColor = '#e3f2fd';
+                    this.style.transform = 'scale(1.02)';
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                        this.style.transform = '';
+                    }, 300);
+                });
+            });
+            
+            // 添加打印按钮功能
+            const printBtn = document.createElement('button');
+            printBtn.textContent = '打印贺词';
+            printBtn.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background: #c00;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 1000;
+            `;
+            printBtn.onclick = () => window.print();
+            document.body.appendChild(printBtn);
+        });
+    </script>
+</body>
+</html>
